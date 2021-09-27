@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="styles\main.css">
+    <link rel="stylesheet" href="styles\glide.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1 id="Rosetas">ROSETAS</h1>
+            
+            <ul class="navigation">
+              <li><a href=index.html>Home</a></li>
+              <li><a href="Nosotros.html">Nosotros</a></li>
+              <li><a href="Cursos.html">Cursos</a></li>
+              <li><a href="Proyectos.html">Proyectos</a></li>
+            </ul>
+          </header>    
+    </div>    
+        <!-- <article class="main">     -->
+        <div class="flex-container">
+            <h2>Nuestra Comunidad</h2>
+            <!-- <div class="responsive"> -->
+                <audio controls autoplay loop> 
+                <source src="recursos/Friends.ogg" type="audio/ogg"></audio>
+        
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+                <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit modi assumenda, voluptate recusandae quasi consequuntur, reiciendis provident sapiente voluptates inventore! Magnam nemo architecto error doloremque eius adipisci ullam obcaecati.</p>
+        
+            <br><br>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                  <ul class="glide__slides">
+                    <li class="glide__slide"><img src="recursos\chang-duong-KrfID_ZQxWs-unsplash (1).jpg"  width="415" alt="Abrazo" class="responsive"> </li>
+                    <li class="glide__slide"> <img src="recursos\clay-banks-LjqARJaJotc-unsplash.jpg" width="400" alt="Manos" class="responsive"></li>
+                    <li class="glide__slide"><img src="recursos\duy-pham-Cecb0_8Hx-o-unsplash.jpg" width="400" alt="Salto" class="responsive"> </li>
+                    <li class="glide__slide"> <img src="recursos\markus-winkler-L91XxIUUGU4-unsplash.jpg" width="400"  alt="Coworking" class="responsive"></li>
+                  </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                  <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                  <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>     
+        </div>
+
+        
+    </article>
+
+        <footer class="footer">          
+        <h4>Contacto: rosetas.info@gmail.com</h4>
+        </footer>
+      </div>      
+      
+      <script src="scripts\Glide.js"> </script>
+      <script>
+          new Glide('.glide').mount()
+      </script>
+        <script>
+          const config = {
+          type: "carousel",
+          perView: 3,
+          breakpoints: {
+          0: {
+              perView: 3
+            }
+          }
+        }; 
+        new Glide(".glide", config).mount();
+      </script>      
+
+</body>
+</html>
+

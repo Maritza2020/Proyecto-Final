@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="styles\main.css">
+    
+</head>
+<div class="wrapper">
+    <header class="header">
+        <h1 id="Rosetas">ROSETAS</h1>
+        
+        <ul class="navigation">
+          <li><a href=index.html>Home</a></li>
+          <li><a href="Nosotros.html">Nosotros</a></li>
+          <li><a href="Cursos.html">Cursos</a></li>
+          <li><a href="Proyectos.html">Proyectos</a></li>
+        </ul>
+      </header>
+
+    <article class="main">
+      
+      <ul class="flex-container">
+        <!-- <h2>Nuestros Cursos</h2> -->
+        <li class="flex-item3"><h3>Ilustración en Acrílico</h3> 
+          <div class="imagen_2">
+            <video src="recursos/video.mp4"  controls autoplay class="responsive"> </video>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequuntur molestias reprehenderit laborum perspiciatis rerum ipsa mollitia vel quae laudantium unde modi quos enim impedit repudiandae illum, excepturi doloribus ad!</p>
+          </div>
+      </li>
+        <li class="flex-item3"><h3>Ilustración en Acuarela</h3>
+            <div class="imagen_2">
+              <img src="recursos\14422-big.jpg" class="img-fluid" width="80%" alt="Retrato ilustrado" class="responsive">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident ad et libero, labore placeat illo ratione nemo delectus minus odit expedita ut maiores animi consectetur obcaecati ab error quis.</p>
+            </div>
+        </li>
+        <li class="flex-item3"><h3>Ilustración Digital</h3>
+            <div class="imagen_2">
+            <img src="recursos\17271-big (1).png" class="img-fluid" width="80%" alt="Retrato ilustrado" class="responsive">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequuntur molestias reprehenderit laborum perspiciatis rerum ipsa mollitia vel quae laudantium unde modi quos enim impedit repudiandae illum, excepturi doloribus ad!</p>
+            </div>
+        </li>
+        <li class="flex-item3"><h3></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est dolorem, optio at velit nesciunt asperiores. Qui voluptates incidunt labore eius nulla ea, dolores provident! Cumque vitae perspiciatis excepturi? Impedit, animi?</p>
+        </li>
+        <li class="flex-item">5</li>
+        <li class="flex-item">6</li>
+      </ul>
+    </article>
+
+    <!-- <aside class="aside aside-1">Aside 1</aside> -->
+    
+    <aside class="aside aside-2">
+      <br>
+      <table class="table" border="1">
+        <thead class="thead-dark tabla">
+          <h3>Cursos disponibles</h3>
+          <tr>
+            <th scope="col" colspan="2">Docente</th>
+            <th scope="col">Tema</th>
+            <th scope="col">Contenido</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Ilustración Acuarela</td>
+            <td rowspan="2">40 horas</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Juan</td>
+            <td>Ilustración Acrilico</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Lucy</td>
+            <td>Ilustración Digital</td>
+            <td>30 horas</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Mark</td>
+            <td>Diseño de producto</td>
+            <td>20 horas</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Lucy</td>
+            <td>Estampado en Tela</td>
+            <td>10 horas</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Mark</td>
+            <td>Creación de Marca</td>
+            <td>10 horas</td>
+          </tr>
+        </tbody>
+      </table>
+      <br><br>
+      <div class="Inscripciones">  
+            <form class="form-inscripciones">
+            <fieldset>
+            
+            <legend> <h1>Inscripciones</h1></legend>
+            
+            <label for="usuario">Usuario</label>
+            <input type="text" placeholder="Usuario" name="usuario" id="usuario" required maxlength="10" minlength="5"><br>  
+              
+            <label for="contrasena">Contraseña</label>
+            <input type="text" placeholder="clave" name="clave" id="clave" required ><br>
+            
+            <label for="correo">Correo</label>
+            <input type="email" placeholder="E-mail" name="email" id="email" required><br>
+            
+            <p>Seleccione el Curso</p>
+            
+                <input type="radio" name="Curso" value="Acuarela" id="Acuarela" >
+                <label for="Acuarela">Ilustración Acuarela</label><br>        
+                <input type="radio" name="Curso" value="Ilustración en Acrilico" id="Acrilico" >
+                <label for="Acrílico">Ilustración Acrilico</label><br>
+                <input type="radio" name="Curso" value="Digital" id="Digital" >
+                <label for="Digial">Ilustración Digital</label><br>
+                <input type="radio" name="Curso" value="Diseño" id="Producto" >
+                <label for="Producto">Diseño de Producto</label><br>
+                <input type="radio" name="Curso" value="Estampado" id="Estampado" >
+                <label for="Estampado">Estampado en Tela</label><br>
+                <input type="radio" name="Curso" value="Marca" id="Marca" >
+                <label for="marca">Creación de Marca</label>
+            
+                <br><br>
+                <label for="comentarios">Comentarios</label> 
+                <input type="Comentarios" placeholder="Comentarios"/><br><br>
+                
+                <!-- <label for="reset">Limpiar campos</label>
+                <input type="reset" placeholder="reset" value="Limpiar formulario"/>  -->
+                
+                <input type="submit" placeholder="Enviar formulario" id="btn-submit-form"/><br>
+                         
+            </form>
+            </div>  
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+               
+    </aside>
+    <footer class="footer">Contacto: rosetas.info@gmail.com</footer>
+  </div>
+
+  <script src="scripts\howler.min.js"></script>
+  <script src="scripts\main.js"></script>
+</body>
+</html>
