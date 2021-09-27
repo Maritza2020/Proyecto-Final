@@ -1,0 +1,245 @@
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    list-style: none;
+    margin-top: 55px; 
+    /* padding-left: 150px; */
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    display: flex;
+    padding: 0.3em;
+    color: black;
+    background-color: white;
+    margin-left: 5px;   
+    padding-top: 0px;
+    border-radius: 5px;  
+    align-items: flex-end;
+  }
+  
+  .navigation a:hover {
+    background: rgb(180, 176, 176);
+  }
+  
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .navigation a { 
+      text-align: right; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+      align-items: flex-end;
+    }
+    
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+  
+  .wrapper {
+      display: flex;  
+      flex-flow: row wrap;
+      font-weight: bold;
+      text-align: center; 
+    }
+    
+    .wrapper > * {
+      padding: 10px;
+      flex: 1 100%;
+    }
+    
+    .header {
+      display: flex;
+      color: white;
+      align-items: left;
+      padding-left: 0px;
+      width: 100%;
+      background-image: linear-gradient(to right bottom, #41894a, #788d41, #a38f48, #c7905e);
+    }
+
+   #Rosetas{
+    display: flex;
+    width: 50%;
+    margin-left: 10%;
+   }
+    
+    .footer {
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      padding-top:  5px;
+      color: white;
+      background-image: linear-gradient(to right bottom, #41894a, #788d41, #a38f48, #c7905e);
+    }
+    
+    .main {
+      text-align: left;
+      background-color: whitesmoke;
+    
+    }
+    
+    .aside-1 {
+      width: 100%;
+      background:#e0d8d0ec;
+    }
+    
+    .aside-2 {
+      width: 100%;
+      background-color:#e0d8d0ec;
+    }
+    
+    @media all and (min-width: 600px) {
+      .aside { flex: 1 0 0; }
+    }
+    
+    @media all and (min-width: 800px) {
+      .main    { flex: 3 0px; }
+      .aside-1 { order: 1; } 
+      .main    { order: 2; }
+      .aside-2 { order: 3; }
+      .footer  { order: 4; }
+    }
+    
+    body {
+      padding: 2em; 
+    }
+    
+    .flex-container {
+      /* We first create a flex layout context */
+      display: flex;
+      background-color: whitesmoke; 
+      /* Then we define the flow direction 
+         and if we allow the items to wrap 
+       * Remember this is the same as:
+       * flex-direction: row;
+       * flex-wrap: wrap;
+       */
+      flex-flow: row wrap;
+      
+      /* Then we define how is distributed the remaining space */
+      justify-content: space-around;
+      
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .imagen_1{
+      width:80%;
+      margin-left: 10%;
+    }
+    .imagen_2{
+      width:80%;
+      margin-left: 10%;
+    }
+    .responsive {
+      width: 100%;
+      height: auto;
+    }
+
+    .flex-item1 {
+      background-color: #a38f48;
+      width: 220px;
+      height: 150px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      line-height: 40px;
+      color: white;
+      font-weight: bold;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .flex-item2 {
+      background: #e0d8d0ec ;
+      padding-bottom: 3px;
+      width: 150px;
+      height: 25px;
+      margin-top: 3px;
+      color: black;
+      border-radius: 5px;
+      font-size: 0.7em;
+      text-align: center;
+      cursor: pointer;
+    }
+    
+    .flex-item2:hover{
+      background-color:  rgb(151, 143, 143);
+      color:white;
+      box-shadow: 10px 8px 16px 5px lightgrey;
+    }
+
+    .flex-item2 a{
+      text-decoration: none;
+      color: black;
+    }
+    .flex-item3 {
+      background-image: linear-gradient(to right bottom, #41894a, #788d41, #a38f48, #c7905e);
+      color: white;
+      margin-top: 10px;
+      align-content: center;
+      
+    }
+ 
+    fieldset{
+      width: 95%;
+      text-align: left;
+      border-radius: 5px;
+      margin-left: auto;
+      border-color: whitesmoke;
+  }
+  
+  legend{
+      background-color: #a38f48;
+      color:white;
+      width: 100%;
+      border-radius: 5px;
+      text-align: center;
+  }
+  
+  label{
+      margin-right: 10px;
+      font-size:medium;
+      padding-left: 10px;
+  }
+  
+  input{
+      text-align: center;
+      width: 95%;
+      margin-left: 5px;
+  }
+
+ #Acuarela { width: 20%;}
+ #Acrilico { width: 20%;}
+ #Digital { width: 20%;}
+ #Producto { width: 20%;}
+ #Estampado { width: 20%;}
+ #Marca { width: 20%;}
+
+  #btn-submit-form{
+    width: 50%;
+    height: 30px;
+    background-color: #a38f48;
+    border-radius: 5px;
+    color: black;
+    margin-left: 25%;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  table{
+    margin-top: 20px;
+    margin-left: 5px;
+    color: black;
+    font-size: medium;   
+}
+  
